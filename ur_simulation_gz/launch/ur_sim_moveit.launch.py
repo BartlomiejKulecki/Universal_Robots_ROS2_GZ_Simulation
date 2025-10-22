@@ -133,7 +133,8 @@ def generate_launch_description():
             "moveit_launch_file",
             default_value=PathJoinSubstitution(
                 [
-                    FindPackageShare("ur_moveit_config"),
+                    # FindPackageShare("ur_moveit_config"),
+                    FindPackageShare("ur_simulation_gz"),
                     "launch",
                     "ur_moveit.launch.py",
                 ]
